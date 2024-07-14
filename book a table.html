@@ -1,0 +1,59 @@
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-image: url("./img/12.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(29, 29, 36); 
+    text-align: justify; 
+     margin: 20;
+    padding: 10;
+ }
+ nav a{
+     color: #030303df;
+     text-decoration: none;
+     margin: 0 10px;
+ }
+ .container{
+     background-color: rgba(red, green, rgb(156, 156, 167), alpha);
+     padding: 100px;
+     margin: 100px auto;
+     max-width: 800px;
+     border-radius:50px;
+ }
+ img{
+  max-width: 100%;
+  height: 50%;
+  border-radius: 50px;
+ }
+ form{
+     display: block;
+     flex-direction: column;
+     align-items: center;
+ }
+ form input form label{
+     margin: 5px 0;
+ }
+ .large-text{
+     font-size: 24px;/*Adjust the size ads needed*/
+ }
+</style>
+<div class="container" id="booking">
+    <h1>BOOK A TABLE</h1>
+    <form action="submit_booking.php" method="post">
+        <label for="name">Name:</label><br>
+        <input for="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="guests">Number Of Guests</label><br>
+            <input type="number" id="guests" name="guests" required><br><br>
+            <input type="submit" value="Book Now">
+
+    </form>
+
+
+</div>
